@@ -1,0 +1,17 @@
+.flex{
+   
+   padding-top: 5px;
+ text-align: center;
+    display: flex;
+
+   
+
+}
+.flex img{
+    width: 70%;
+    height: 110%;
+}
+.heading{
+    padding: 15px;
+    text-align: center;
+}
