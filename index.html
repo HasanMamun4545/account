@@ -11,50 +11,51 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1 class="heading"> Balance Checker</h1>
+    <h1 class="p-4 text-center"> Balance Checker</h1>
     <section class="flex">
      
-        <div>
-         <img src="picture/cover.jpg" alt="">
+        <div >
+         <img class="w-75 h-75" src="picture/cover.jpg" alt="">
         </div>
         
-         <div class="d-flex flex-column" >
+         <div class="w-50" >
             <h1>Income</h1>
                        <div class="p-2 d-inline d-flex flex-column">
-                        <label for="balance" class=""><span class="d-inline">income</span> </label>
-                        <input type="text" id="balance">
+                        <p>Income</p>
+                        <input id ="current" type="text" id="balance">
                        </div>
                        <h1>Expenses</h1>
                        <div class="p-2 d-inline d-flex flex-column"> 
                         <label for="food" class=""><span class="d-inline"> Food</span> </label>
-                        <input type="text" id="food">
+                        <input id="foodcost" type="text" id="food">
                        </div>
                        <div>
                         <label for="Rent" class=""><span class="d-inline"> Rent </span></label>
-                        <input type="text" id="Rent">
+                        <input id="rentcost" type="text" id="Rent">
                        </div>
-                       <div class="p-2 d-inline d-flex flex-column justify content between">
+                        <div class="p-2 d-inline d-flex flex-column justify content between">
                         <label for="Clothes" class="p-2 d-inline "><span class="d-inline"> Clothes</span> </label>
-                        <input type="text" id="clothes">
+                        <input id="clothes" type="text" id="cloth">
                        </div>
                            
-                       <button type="button" class="p-2 d-inline btn btn-primary btn-lg">calculate</button>
+                       <button id="calculate" type="button" class="p-2 d-inline btn btn-primary btn-lg">calculate</button>
                             
-                       <H2>total Expenses</H2>
-                       <h2>Balance</h2>
+                       <H2>total Expenses =$ <span id="total">  </span> </H2>
+                       <h2>Balance =$ <span id="available"></span></h2>
                        <div class="p-2 d-inline d-flex flex-column"> 
                         <label for="save" class=""><span class="d-inline"> save </span></label>
-                        <input type="number" id="save"> <span class="d-inline"> %</span> 
+                        <input id="savings" type="text" id="save"> %
                        </div>
-                       <button type="button" class="btn btn-primary btn-lg">save</button>
-<h2>Saving ammount</h2>
-<h2>Remaining Balance</h2>
+                       <button id="save-money" type="button" class="btn btn-primary btn-lg">save</button>
+<h2>Saving ammount = $ <span id="savescreen"></span></h2>
+<h2>Remaining Balance = $ <span id ="" ></span></h2>
                                                       
                                        
               </div>
            
         </div>
     </section>
+    <script src="main.js"></script>
 
 
 
@@ -74,7 +75,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   </body>
 </html>
