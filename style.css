@@ -7,5 +7,10 @@
    
 
 }
+.image{
+    background-image:url(picture/cover.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 705px 815px;
+}
 
   

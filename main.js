@@ -13,7 +13,8 @@ document.getElementById('calculate').addEventListener('click',function(){
       const clothes = document.getElementById('clothes');
       const clothesammount = clothes.value;
       const clothesvlue = parseFloat(clothesammount);
-      const totalcost = foodvalue + rentvalue + clothesvlue ;
+      if(income>0 && foodvalue>0 && rentvalue>0 && clothesvlue>0){
+         const totalcost = foodvalue + rentvalue + clothesvlue ;
       const totalvalue = parseFloat(totalcost);
       const expense = document.getElementById('total');
       const expenseamount = expense.innerText;
@@ -23,6 +24,8 @@ document.getElementById('calculate').addEventListener('click',function(){
       const availablemoney = bal.innerText;
       const balancetext = parseFloat(availablemoney);
       bal.innerText = income - totalvalue ;
+      }
+      
      
       
 
@@ -40,6 +43,18 @@ document.getElementById('save-money').addEventListener('click',function(){
   const savingText = savingbal.innerText;
    const convertsave = parseFloat(savingText);
    savingbal.innerText = parcentamount;
+   
+   const bal = document.getElementById('available');
+   const availablemoney = bal.innerText;
+   const balancetext = parseFloat(availablemoney);
+   const rem = document.getElementById('ramaining');
+   const rembalance = rem.innerText;
+   const rembalfloat = parseFloat(rembalance);
+  const Balance =  balancetext - parcentamount;
+  const Balancefloat = parseFloat(Balance);
+  rem.innerText = Balancefloat;
+  
+    
 })
 
 

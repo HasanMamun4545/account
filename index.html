@@ -12,46 +12,69 @@
   </head>
   <body>
     <h1 class="p-4 text-center"> Balance Checker</h1>
-    <section class="flex">
+    <section class="flex gap-3">
      
-        <div >
-         <img class="w-75 h-75" src="picture/cover.jpg" alt="">
+        <div class="image bg-success p-4 m-4 w-50" >
+         
         </div>
         
-         <div class="w-50" >
-            <h1>Income</h1>
-                       <div class="p-2 d-inline d-flex flex-column">
-                        <p>Income</p>
-                        <input id ="current" type="text" id="balance">
-                       </div>
+        <section class="w-50  bg-success bg-opacity-10 p-4 m-4 ">
+          
+            <h1 >Income</h1>
+                       <section class="flex gap-3"> 
+                        <div><p>Income</p> </div>
+                        <div> <input class="" id ="current" type="text" id="balance"> </div>
+                        
+                       </section>
                        <h1>Expenses</h1>
-                       <div class="p-2 d-inline d-flex flex-column"> 
-                        <label for="food" class=""><span class="d-inline"> Food</span> </label>
-                        <input id="foodcost" type="text" id="food">
-                       </div>
-                       <div>
-                        <label for="Rent" class=""><span class="d-inline"> Rent </span></label>
-                        <input id="rentcost" type="text" id="Rent">
-                       </div>
-                        <div class="p-2 d-inline d-flex flex-column justify content between">
-                        <label for="Clothes" class="p-2 d-inline "><span class="d-inline"> Clothes</span> </label>
-                        <input id="clothes" type="text" id="cloth">
-                       </div>
+                       <section class="flex gap-3">
+                         <div><p>Food</p></div>
+                        <div> 
+                        
+                          <input class="" id="foodcost" type="text" id="food">
+                         </div>
+                       </section>
+                       
+
+                       <section class="flex gap-3">
+                         <div><p>Rent</p></div>
+                        <div>
+                         
+                          <input class="gap-3" id="rentcost" type="text" id="Rent">
+                         </div>
+                       </section>
+                      
+                       <section class="flex gap-3">
+                         <div><p>Clothes</p></div>
+                        <div class="p-2">
+                        
+                          <input class="" id="clothes" type="text" id="cloth">
+                         </div>
+                       </section>
+                        
                            
-                       <button id="calculate" type="button" class="p-2 d-inline btn btn-primary btn-lg">calculate</button>
+                       <button id="calculate" type="button" class="p-2 m-2 btn btn-primary btn-lg">calculate</button>
                             
                        <H2>total Expenses =$ <span id="total">  </span> </H2>
                        <h2>Balance =$ <span id="available"></span></h2>
-                       <div class="p-2 d-inline d-flex flex-column"> 
-                        <label for="save" class=""><span class="d-inline"> save </span></label>
-                        <input id="savings" type="text" id="save"> %
-                       </div>
-                       <button id="save-money" type="button" class="btn btn-primary btn-lg">save</button>
-<h2>Saving ammount = $ <span id="savescreen"></span></h2>
-<h2>Remaining Balance = $ <span id ="" ></span></h2>
+                       <section class="flex gap-3">
+                         <div><p>Save</p></div>
+                        <div> 
+                          
+                          <input class="" id="savings" type="text" id="save">  %
+                         </div>
+                         <div>
+                          <button id="save-money" type="button" class="btn btn-primary width-174">save</button>
+
+                         </div>
+                       </section>
+                       
+<h2>Saving ammount = $ <span id="savescreen"> </span></h2>
+<h2>Remaining Balance = $ <span id ="ramaining" ></span></h2>
                                                       
                                        
-              </div>
+              
+        </section>
            
         </div>
     </section>
